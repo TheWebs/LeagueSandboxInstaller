@@ -1,0 +1,24 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeagueSandboxInstaller"
+        xmlns:metro="http://schemas.codeplex.com/elysium" x:Class="LeagueSandboxInstaller.MainWindow"
+        mc:Ignorable="d"
+        Title="LeagueSandbox: 4.20 downloader" WindowStartupLocation="CenterScreen" Height="350" Width="538.725" ResizeMode="CanMinimize" WindowStyle="None">
+    <Grid Background="#FF252525">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Stroke="Black" VerticalAlignment="Top" Width="539"/>
+
+        <Button x:Name="button" Content="Install" HorizontalAlignment="Left" Height="68" Margin="10,256,0,0" VerticalAlignment="Top" Width="519" Click="button_Click" Cursor="Hand"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Height="41" Margin="229,107,0,0" VerticalAlignment="Top" Width="81" FontSize="26.667" HorizontalContentAlignment="Center" Foreground="White"/>
+
+        <metro:ProgressRing x:Name="pr" HorizontalAlignment="Left" Height="81" Margin="229,86,0,0" VerticalAlignment="Top" Width="81" BorderBrush="#FF252525"/>
+        <Label x:Name="label2" Content="LeagueSandbox : LoL 4.20 Installer" HorizontalAlignment="Left" Height="49" VerticalAlignment="Top" Width="539" FontWeight="Bold" FontSize="26.667" FontFamily="Source Sans Pro Black" Foreground="#FF1468BB" MouseDown="label2_MouseDown"/>
+        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Height="40" Margin="493,4,0,0" VerticalAlignment="Top" Width="40" Background="#FF252525" Foreground="White" FontWeight="Bold" Cursor="Hand" Click="button1_Click"/>
+        <Label x:Name="label1" Content="Stats: Ready to start" HorizontalAlignment="Left" Height="52" Margin="10,186,0,0" VerticalAlignment="Top" Width="519" FontSize="26.667" HorizontalContentAlignment="Center" Foreground="White"/>
+        <Button x:Name="button1_Copy" Content="-" HorizontalAlignment="Left" Height="40" Margin="448,4,0,0" VerticalAlignment="Top" Width="40" Background="#FF252525" Foreground="White" FontWeight="Bold" Cursor="Hand" Click="button1_Copy_Click" FontSize="26.667"/>
+        <Button x:Name="button2" Content="Exit" HorizontalAlignment="Left" Height="68" Margin="10,256,0,0" VerticalAlignment="Top" Width="519" Cursor="Hand" Visibility="Hidden" Click="button2_Click"/>
+
+    </Grid>
+</Window>
